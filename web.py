@@ -8,7 +8,7 @@ from PIL import Image
 # ==========================================
 # 🔑 CONFIGURATION & ENGINE SETTINGS
 # ==========================================
-_NEXUS_CORE_KEY = "AIzaSyBb6pYMXu6TTG5_Pj15Lg3kEysIVO0XTbk"
+_NEXUS_CORE_KEY = "AIzaSyBeIZZWg0GNHjPT2IO95s1lybBAGkAUV3o"
 MODEL_NAME = "gemini-2.5-flash" 
 
 st.set_page_config(page_title="ALPHA MERGE ENGINE", page_icon="💠", layout="wide")
@@ -163,4 +163,5 @@ elif app_mode == MODE_DATA:
             buf = io.BytesIO()
             with pd.ExcelWriter(buf, engine='openpyxl') as writer:
                 merged_df.to_excel(writer, index=False)
+
             st.download_button("📥 DOWNLOAD MERGED FILE", buf.getvalue(), "merged_result.xlsx")
