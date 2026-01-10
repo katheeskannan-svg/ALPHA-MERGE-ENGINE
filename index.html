@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kathees Kannan C — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="site-name">Kathees Kannan C</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-text">
+        <h2 id="headline">Hi — I'm <span id="name">Kathees Kannan C</span></h2>
+        <p id="short-bio">A short description about you. Developer, designer, problem solver.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn btn-outline" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-image" id="profile-placeholder">
+        <img src="assets/profile.jpg" alt="Kathees Kannan C" id="profile-img">
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <h3>About</h3>
+      <p id="about-text">I'm currently studying at Velammal Institute of Technology with a CGPA of 8.3. I completed my 12th with 71%. I have experience learning Java and Python, and I work with Vibe coding, Figma, and SaaS.</p>
+    </section>
+
+    <section class="container" id="projects">
+      <h3>Projects</h3>
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card">
+          <h4>ALPHA MERGE ENGINE</h4>
+          <p>Project developed during 2nd year — an engine/service built as part of coursework and experimentation. Technologies used include Java and Python.</p>
+          <p><a href="https://alpha-merge-engine.onrender.com/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/katheeskannan-svg/ALPHA-MERGE-ENGINE.git" target="_blank" rel="noopener">Source</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <h3>Contact</h3>
+      <p>If you'd like to work together, send a message or reach out via the links below.</p>
+      <form id="contact-form">
+        <label for="email">Your email</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p style="margin-top:12px;color:var(--muted)">Also find me: <a href="https://github.com/katheeskannan-svg" target="_blank" rel="noopener">GitHub</a> · <a href="https://alpha-merge-engine.onrender.com/" target="_blank" rel="noopener">Project (live)</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Kathees Kannan C — Built with a simple template</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
